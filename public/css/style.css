@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Oswald:wght@200;400;500&family=Poppins:wght@200;300;500&display=swap');
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-areas: 
+    "h h h h h"
+    "fav fav fav fav fav"
+    ". l c r ."
+    "f f f f f";
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: antiquewhite;
+}
+#header{
+    background-color: #EF9595;
+    grid-area: h;
+    text-align: center;
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+#favourites{
+    grid-area: fav;
+}
+
+#favourites span{
+    font-size: small;
+}
+#favourites img{
+    width: 58px;
+}
+#content{
+    background-color: #EFD595;
+    grid-area: c;
+    padding: 30px;
+    
+}
+#leftbar{
+    background-color: #EFB495;
+    grid-area: l;
+    padding: 30px;
+    
+}
+#rightbar{
+    background-color: #EFB495;
+    grid-area: r;
+    padding: 30px;
+    
+}
+#footer{
+    display: grid;
+    background-color: #EF9595;
+    grid-area: f;
+    text-align: center;
+    align-items: center;
+    color: #EFD595;
+    font-size:larger;
+    font-weight: bolder;
+    
+}
+.smallheading{
+    color: palevioletred;
+}
+a{
+    color: #EFD595;
+    font-size: medium;
+}
+a:hover{
+    transition: 1s ease;
+    color: palevioletred;
+}
+div{
+    border-radius: 30px;
+}
+#content img {
+    animation-duration: 1s;
+    animation-name: slidein;
+    text-align: center;
+    width: 300px;
+}
+/* animation: */
+@keyframes slidein{
+    from{
+        margin-left: 30%;
+        width: 150px;
+        filter: blur(5px);
+       
+    }
+    to{
+        margin-left: 0%;
+        width: 300px;
+        
+    }
+}
+.pokemonNames{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 100%;
+    color:bisque;
+}
+.pokemonNames:hover{
+    transition: 1s ease;
+    transform: scale(1.3);
+    color: palevioletred;
+}
+.types-item{
+    color: rgb(143, 88, 15);
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 3px 3px palevioletred;
+    color: rgb(143, 88, 15);
+}
+th, td{
+    border: 1px solid palevioletred;
+    padding: 10px;
+}
+.evenline{
+    background-color:#EFD595
+}
+h1{
+    color: #EFD595;
+}
+h2{
+    color: palevioletred;
+}
+h3{
+    color: blanchedalmond;
+}
+@media screen and (max-width: 768px) { 
+    #container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto auto auto auto 1fr;
+        grid-template-areas: 
+        "h"
+        "fav"
+        "l"
+        "c"
+        "r"
+        "f";
+    }
+}

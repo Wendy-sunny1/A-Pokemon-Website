@@ -1,0 +1,19 @@
+{
+  "name": "web-assignment-pokemon",
+  "version": "1.0.0",
+  "description": "Web Assignment Pokemon",
+  "main": "src/web-assignment-pokemon.js",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon src/web-assignment-pokemon.js --watch src --delay 1",
+    "start": "node src/web-assignment-pokemon.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
